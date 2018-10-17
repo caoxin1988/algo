@@ -1,13 +1,14 @@
 {
     "configurations": [
+        
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Main",
+            "name": "CodeLens (Launch) - QueueMain",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "com.caoxin.stack.Main",
+            "mainClass": "com.caoxin.queue.QueueMain",
             "args": ""
         },
         {
@@ -16,6 +17,6 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
-        },
+        }
     ]
 }

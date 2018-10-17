@@ -33,6 +33,8 @@ class ListQueue(object):
         else:
             self.head = node.next
 
+        node.next = None
+
         return node.data
 
 def main():

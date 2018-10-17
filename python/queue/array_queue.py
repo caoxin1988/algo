@@ -8,7 +8,7 @@ class ArrayQueue(object):
 
     def equeue(self, data : int) -> bool:
 
-        if self.tail == (self.size - 1):
+        if self.tail == self.size:
             if self.head == 0:      # queue is really full
                 print('    -> queue is full')
                 return False
@@ -41,7 +41,10 @@ def main():
 
     queue.equeue(1)
     queue.equeue(2)
+    queue.equeue(3)
+    queue.equeue(4)
 
+    print('data : %s' % queue.dequeue())
     print('data : %s' % queue.dequeue())
     print('data : %s' % queue.dequeue())
     print('data : %s' % queue.dequeue())
