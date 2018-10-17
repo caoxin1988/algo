@@ -5,17 +5,17 @@ public class Main {
     {
         System.out.println( "array stack program!" );
 
-        // ArrayStack stack = new ArrayStack(10);
-        // stack.push(1);
-        // stack.push(2);
+        ArrayStack stack = new ArrayStack(10);
+        stack.push(1);
+        stack.push(2);
 
-        // System.out.println("data : " + stack.pop());
-        // System.out.println("data : " + stack.pop());
-        // System.out.println("data : " + stack.pop());
+        System.out.println("data : " + stack.pop());
+        System.out.println("data : " + stack.pop());
+        System.out.println("data : " + stack.pop());
 
-        // stack.push(3);
-        // System.out.println("data : " + stack.pop());
-        // System.out.println("data : " + stack.pop());
+        stack.push(3);
+        System.out.println("data : " + stack.pop());
+        System.out.println("data : " + stack.pop());
 
         System.out.println( "==================" );
         ListStack stack1 = new ListStack();
