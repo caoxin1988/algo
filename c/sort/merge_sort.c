@@ -34,6 +34,8 @@ void merge(int *a, int p, int q, int r) {
 
     for (int i = p; i < (q+1); i++)
         a[i] = tmp[i-p];
+
+    free(tmp);
 }
 
 void merge_sort(int *a, int p, int q) {
