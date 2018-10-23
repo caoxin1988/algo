@@ -1,2 +1,2 @@
 all:
-	gcc -o element Kth_element.c
+	gcc -o sort counting_sort.c
