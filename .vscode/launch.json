@@ -2,32 +2,12 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - KthElement",
+            "name": "CodeLens (Launch) - BaseSort",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "com.caoxin.sort.KthElement",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - QuickSort",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "QuickSort",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MergeSort",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.caoxin.sort.MergeSort",
+            "mainClass": "com.caoxin.sort.BaseSort",
             "args": ""
         },
         {
