@@ -1,6 +1,8 @@
 
 
-a = [1, 4, 7, 3, 11, 9, 2, 6, 4, 7]
+m = [2, 3, 3, 7, 3, 9, 9, 12, 6]
+n = [1, 3, 4, 7, 10, 16, 12, 9, 17, 19]
+a = m + n
 n = len(a)
 
 def bubble_sort():
@@ -19,12 +21,16 @@ def bubble_sort():
 def insert_sort():
     for i in range(1, n):
         tmp = a[i]
-        for j in range(i-1, -1, -1):
+        j = i - 1
+        
+        while j > -1:
             if tmp < a[j]:
                 a[j+1] = a[j]
+                j -= 1
             else:
-                a[j+1] = tmp
                 break
+
+        a[j+1] = tmp
 
     print('new array:')
     print(a)
@@ -51,6 +57,7 @@ def select_sort():
 def main():
     # bubble_sort()
     insert_sort()
+    # select_sort()
 
 if __name__ == '__main__':
     main()

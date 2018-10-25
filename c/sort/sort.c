@@ -3,7 +3,7 @@
 
 #define N 10
 
-int a[N] = {1, 6, 3, 8, 15, 6, 7, 3, 12, 10};
+int a[N] = {7, 6, 3, 8, 15, 6, 7, 3, 12, 10};
 
 void bubble_sort() {
 
@@ -24,21 +24,23 @@ void bubble_sort() {
     printf("\n");
 }
 
-// int a[N] = {1, 6, 3, 8, 15, 6, 7, 3, 12, 10};
+// int a[N] = {7, 6, 3, 8, 15, 6, 7, 3, 12, 10};
 void insert_sort() {
 
     for(int i = 1; i < N; i++) {
         int tmp = a[i];
         printf("tmp = %d\n", tmp);
-        for (int j = i-1; j >= 0; j--) {
+        int j = i - 1;
+        for (j = i-1; j >= 0; j--) {
             printf("a[i] = %d, a[j]=%d\n", a[i], a[j]);
             if (tmp < a[j]) {
                 a[j+1] = a[j];
             } else {
-                a[j + 1] = tmp;
                 break;
             }
         }
+
+        a[j + 1] = tmp;
     }
 
     printf("new array: \n");

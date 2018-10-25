@@ -55,12 +55,15 @@ def partition(a, le, ri):
 def insert_sort(a, le, ri):
     for i in range(le+1, ri):
         tmp = a[i]
+        j = i - 1
         for j in range(i-1, le-1, -1):
             if tmp < a[j]:
                 a[j+1] = a[j]
             else:
                 a[j+1] = tmp
                 break
+        else:
+            a[j] = tmp
 
 
 def quick_sort(a, p, q):
@@ -86,7 +89,10 @@ def quick_sort(a, p, q):
         stack.push(le, j-1)
 
 def main():
-    quick_sort(a, 0, len(a)-1)
+    print(a)
+
+    # quick_sort(a, 0, len(a)-1)
+    insert_sort(a, 0, len(a))
 
     print(a)
 
