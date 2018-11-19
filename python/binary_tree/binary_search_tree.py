@@ -45,6 +45,19 @@ class BinarySearchTree(object):
 
         if node.right:
             self.in_order(node.right)
+
+    def find(self, data : int):
+        node = self.root
+
+        while True:
+            if node is None:
+                return None
+            elif data == node.val:
+                return node
+            elif data > node.val:
+                node = node.right
+            else:   # data < node.val
+                node = node.left
         
     def get_depth(self, node : Node):
         if not node.left and not node.right:
@@ -67,6 +80,5 @@ for item in items:
 
 print('============\n')
 binary_search_tree.in_order(binary_search_tree.root)
-
-dep = binary_search_tree.get_depth(binary_search_tree.root)
-print('depth : ', dep)
+print('============\n')
+print(binary_search_tree.find(3))
