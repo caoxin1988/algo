@@ -6,15 +6,6 @@ class Graph:
         self.dfs_found = False
 
     def insert(self, s, t):
-        # if s in self.adj.keys():
-        #     self.adj[s].append(t)
-        # else:
-        #     self.adj[s] = [t]
-
-        # if t in self.adj.keys():
-        #     self.adj[t].append(s)
-        # else:
-        #     self.adj[t] = [s]
         self.adj[s].append(t)
         self.adj[t].append(s)
 
